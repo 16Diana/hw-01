@@ -1,0 +1,138 @@
+:root {
+    --primary-text-color: #434455;
+    --title-text-color: #2E2F42;
+    --main-title-color: #FFFFFF;
+    --footer-title-color: #E7E9FC;
+    --button-title-color: #4D5AE5;
+}
+
+
+body {
+    background-color: #FFFFFF;
+    color: var(--title-text-color);
+    font-family: Roboto, sans-serif;
+}
+ul {
+    list-style: none;
+}
+
+/* header */
+.header {
+    background-color:#E7E9FC
+}
+.studio-main {
+    color: var(--title-text-color);
+}
+/* site nav */
+.web {
+    color: var(--button-title-color); 
+}
+.studio, .web, .studio-main {
+    font-family: Raleway, sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33; 
+    text-transform: uppercase; 
+    text-decoration: none;
+}
+.studio { 
+    color: #F4F4FD;
+}
+.site-nav a {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.site-nav .link.current {
+    color: #404BBF;
+    text-decoration: none;
+}
+.link {
+    text-decoration: none;
+}
+.site a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+.link:hover {
+    color: #404BBF;
+}
+.link:focus {
+    color: #404BBF;
+}
+
+/* main section-1 */
+.effective {
+    color:  var(--main-title-color);
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.1;    
+    text-align: center;
+ 
+}
+
+/* button first */
+.button-main {
+    border: none;
+    background-color:#4D5AE5;
+    color: var(--main-title-color);
+    cursor: pointer;
+}
+.button-main:hover {
+    background-color:#404BBF;
+}
+.button-main:focus{
+    background-color:#404BBF;
+}
+.button{
+   border: none;
+   background-color: #E7E9FC;
+   color: var(--button-title-color);
+   font-family: inherit;
+   cursor: pointer;
+}
+.button:hover {
+    background-color: #404BBF;
+    color: #FFFFFF;
+}
+.button:focus {
+    background-color: #404BBF;
+    color: #FFFFFF;
+}
+
+.section-main {
+    background-color:#2E2F42
+}
+
+/* tecst */
+.text {    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+p {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.5    ;
+   }
+   .subtitle {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    text-align: center;
+   }
+
+/* Our Team */
+.section-foto {
+    background-color:#F4F4FD
+}
+
+/* footer */
+.increase {
+    color: #E7E9FC;
+}
+.footer {
+    background-color:#2E2F42
+}
