@@ -5,6 +5,25 @@
     --footer-title-color: #E7E9FC;
     --button-title-color: #4D5AE5;
 }
+
+/* global border box */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+} 
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center
+}
+
 body {
     background-color: #FFFFFF;
     color: var(--title-text-color);
@@ -13,16 +32,89 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-.link {
-    text-decoration: none;
-    list-style: none;
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
+.link {
+    text-decoration: none; 
+}
+.header-contact {
+    margin-left: auto;
+}
+.section {
+    text-align: center;
+    margin-bottom: 120px;
+}
+/* загальний клас */
+.container {
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+} 
+.container-nav {
+    border-bottom: 1px solid var(--footer-title-color)
+}
+.header{
+    align-items: center;
+    margin-bottom: 96px;
+}
+.header-contact {
+    justify-content: flex-end;
+}
+.sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: content-box;
+    margin-left: auto;
+}
+.sidebar-nav {
+    margin-left: 24px;
+    margin-bottom: 48px;
+}
+.sidebar:nth-child(3n) {
+    margin-right: 0;
+}
+.sidebar-nav:nth-last-child(-n + 3) {
+    margin-bottom: 120px;
+}
+
+/* шапка розмітка */
+.header-items {
+    margin-left: 76px;
+}
+/* контакти */
+.header-list {
+    margin-right: 40px;
+}
+.header-list:last-child {
+    margin-right: 0;
+}
+.header-contact .header-list+ .header-list {
+    margin-left: 40px;
+}
+/* портфоліо */
+.card-text {
+    border-top: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+
+    border-right: 1px solid var(--footer-title-color);
+    border-left: 1px solid var(--footer-title-color);
+    border-bottom: 1px solid var(--footer-title-color)
+    
+}
+
 .caption {
+    font-family: Raleway, sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.3;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    
 }
 .studio {
     color: var(--title-text-color);
@@ -32,15 +124,24 @@ body {
 }
 /* header */
 .background {
-    background-color: #2E2F42;
+    background-color: #2E2F42; 
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .background-nev {
     background-color: #F4F4FD;
 }
 /* кнопки */
+.container-box {
+    margin-bottom: 72px;
+}
 .btn {
     font-weight: 500;
     color: var(--title-text-color);
+    padding: 12px 24px;
+    border-radius: 4px;
+    min-width: 69px;
+    margin-bottom: 72px;
 }
 .btn:hover,
 .btn:focus,
@@ -52,24 +153,33 @@ body {
     color: #434455;
 }
 .button {
+    text-align: center;
+
     color: #4D5AE5;
     letter-spacing: 0.04em;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     border: none;
     background-color: #F4F4FD;
     font-size: 16px;
     line-height: 1.5;
     font-weight: 500;
     cursor: pointer;
+
 }
 .button:hover,
 .button:focus {
     background-color: #404BBF;
     color: #FFFFFF;
 }
+.button-row {
+    margin-right: 24px;
+}
 .hero {
     background-color: #4D5AE5;
     color: #FFFFFF;
+    border-radius: 4px;
+    padding: 16px 32px;
+
 }
 .hero:hover,
 .hero:focus {
@@ -91,20 +201,39 @@ body {
 }
 .text {
     color: var(--primary-text-color);
+    margin-top: 0;
+    margin-bottom:0;
+    max-width: 264px;
+    margin-top: 16px;
 }
 .effective {
     color: #FFFFFF;
     font-size: 56px;
     line-height: 1.1;
+    margin-top: 0;
+    margin-bottom: 48px;
+
 }
+
 .slogan {
     font-weight: 700;
+    margin-top: 0;
+    margin-top: 0;
+    margin-bottom: 72px;
+   
 }
 .title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     color: var(--title-text-color);
+    margin-top: 0;
+    margin-bottom: 8px
+
+}
+.text-list {
+    margin-left: 24px;
+    text-align: left;
 }
 .subtitle {
     font-size: 36px;
@@ -113,7 +242,12 @@ body {
 .text-nav {
    color: #E7E9FC; 
 }
+.page-container {
+    border-top: 100px;
+    border-bottom: 100px;
+}
 .copy {
+    font-family: Raleway;
     color: #F4F4FD;
     font-weight: 800;
     font-size: 18px;
@@ -123,4 +257,7 @@ body {
 }
 .copyright {
     color: #E7E9FC;
+}
+.aside {
+    margin-bottom: 16px
 }
