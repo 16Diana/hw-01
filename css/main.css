@@ -182,12 +182,11 @@ color: var(--main-title-color)
 .compani {
     display: flex;
     flex-wrap: wrap;
-    margin: -12px;
+    gap: 24px;
 }
 /* calc(( 100% - кількість маржинів в строці *значення маржина ) / кількість елементів) */
 .compani-list {
-    margin: 12px;
-    width: calc((100% - 8 * 12px) / 4);  
+   width: 264px;
 }
 .compani-title {
     margin-bottom: 8px;
@@ -244,12 +243,9 @@ margin-bottom: 72px;
 .tim-items {
     display: flex;
     flex-wrap: wrap;
-    margin: -12px;
+    gap: 24px;
 }
-.tim-list {
-    width: calc((100% - 8 * 12px) / 4);
-    margin: 12px;
-}
+
 .group-elements {
     text-align: center;
     padding-top: 32px;
@@ -259,6 +255,7 @@ margin-bottom: 72px;
 border-radius: 0px 0px 4px 4px;
 }
 .title-inner {
+  padding-bottom: 8px;
     font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
@@ -322,20 +319,17 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px
   .button-menu:hover, .button-menu:focus {
     background-color: #404BBF;
     color: var(--main-title-color);
+    border: #404BBF ;
 
   }
 
 .cards {
     display: flex;
     flex-wrap: wrap;
-    margin: -12px;
     row-gap: 48px;
+    column-gap: 24px;
 }
-.cards-item {
-    width: calc((100% - 6 * 12px) / 3);
-    margin: 12px;
-    
-}
+
 .group-cards {
     border: 1px solid #E7E9FC;
     border-top: 0;
